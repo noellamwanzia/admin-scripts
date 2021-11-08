@@ -13,8 +13,13 @@ const message = messageArg ? messageArg.replace('m=', '') : 'reviewed';
 for (const student of students) {
   console.log(student.name, ': ', student.userName);
 
-  exec(
-    `cd ./${student.userName} && git add . && git commit -m "${message}" && git push origin ${branch}`,
-    (err) => err && console.error(err)
-  );
+  try {
+    exec(`cd ./${student.userName} && git add .`);
+
+    exec(`cd ./${student.userName} && git commit -m "${message}"`);
+
+    exec(`cd ./${student.userName} && git push origin ${branch}`);
+  } catch (err) {
+    console.error(err);
+  }
 }
