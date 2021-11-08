@@ -2,6 +2,8 @@
 
 Some scripts to help manage student repos. It assumes you've already set up the repos in your org, and assumes each repo is named after the student's username.
 
+Before you can use these scripts you'll need to fill in `index.json`, `students.json` and `modules.json` with your class' data.
+
 If your student repos are private, you will need to be authenticated from your computer to use these scripts.
 
 ## Initial Setup
