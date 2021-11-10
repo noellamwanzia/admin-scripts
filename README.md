@@ -8,6 +8,10 @@ If your student repos are private, you will need to be authenticated from your c
 
 ## Initial Setup
 
+Before running these scripts you will need to update `index.json`, make sure it includes the `userName` for your github organization and that the `repoName` is the name of your class' home repo.
+
+Then run these scripts:
+
 1. `node 1-clone-all.js`
 2. `node 2-set-data.js`
 3. `node 3-fetch-avatars.js`
