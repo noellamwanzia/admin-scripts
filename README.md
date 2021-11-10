@@ -1,6 +1,6 @@
 # Admin Scripts
 
-Some scripts to help manage student repos. It assumes you've already set up the repos in your org, and assumes each repo is named after the student's username.
+Some scripts to help manage student repos created using the [student-repo-template](https://github.com/HackYourFutureBelgium/student-repo-template). It assumes you've already set up the repos in your org, and assumes each repo is named after the student's username.
 
 Before you can use these scripts you'll need to fill in `index.json`, `students.json` and `modules.json` with your class' data.
 
